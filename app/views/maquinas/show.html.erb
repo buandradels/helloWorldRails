@@ -1,0 +1,34 @@
+<p id="notice"> <%= notice %> </p>
+
+<p>
+	<b>Tipo: </b>
+	<%= @maquina.tipo %>
+</p>
+
+<p>
+	<b>Nome: </b>
+	<%= @maquina.nome %>
+</p>
+
+<p>
+	<b>Descrição: </b>
+	<%= @maquina.descricao %>
+</p>
+
+<p>
+	<b>Meses de Garantia: </b>
+	<%= @maquina.mesesdegarantia %>
+</p>
+
+<p>
+	<b>Data de Compra: </b>
+	<%= @maquina.datadecompra.strftime("%d/%m/%Y") %>
+</p>
+
+<p>
+	<b>Quebrada: </b>
+	<%= @maquina.quebrada.to_yesno %>
+</p>
+
+<%= link_to "Modificar", edit_maquina_path(@maquina) %> |
+<%= link_to "Voltar", maquinas_path %>

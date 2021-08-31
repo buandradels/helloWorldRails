@@ -1,0 +1,69 @@
+<%= form_with model: maquina do |form| %>
+	<div>
+		<%= form.label :tipo, "Tipo: " %> <br>
+		<%= form.text_field :tipo %>
+		<% @maquina.errors.full_messages_for(:tipo).each do |message| %>
+			<div>
+				<%= message %>
+			</div>
+		<% end %>
+	</div>
+	
+	<div>
+		<%= form.label :nome, "Nome: " %> <br>
+		<%= form.text_field :nome %>
+		<% @maquina.errors.full_messages_for(:nome).each do |message| %>
+			<div>
+				<%= message %>
+			</div>
+		<% end %>
+	</div>
+	
+	<div>
+		<%= form.label :descricao, "Descrição: " %> <br>
+		<%= form.text_area :descricao %>
+		<% @maquina.errors.full_messages_for(:descricao).each do |message| %>
+			<div>
+				<%= message %>
+			</div>
+		<% end %>
+	</div>
+	
+	<div>
+		<%= form.label :mesesdegarantia, "Meses de Garantia: " %> <br>
+		<%= form.text_field :mesesdegarantia %>
+		<% @maquina.errors.full_messages_for(:mesesdegarantia).each do |message| %>
+			<div>
+				<%= message %>
+			</div>
+		<% end %>
+	</div>
+	
+	<div>
+		<%= form.label :datadecompra, "Data de Compra: " %> <br>
+		<%= form.date_field :datadecompra %>
+		<% @maquina.errors.full_messages_for(:datadecompra).each do |message| %>
+			<div>
+				<%= message %>
+			</div>
+		<% end %>
+	</div>
+	
+	<div>
+		<%= form.label :quebrada, "Quebrada:" %> <br>
+		<%= form.radio_button(:quebrada, "true") %>
+		<%= form.label(:quebrada_true, "Sim") %>
+		<%= form.radio_button(:quebrada, "false") %>
+		<%= form.label(:quebrada_true, "Não") %>
+		<% @maquina.errors.full_messages_for(:quebrada).each do |message| %>
+			<div>
+				<%= message %>
+			</div>
+		<% end %>
+	</div>
+	
+	<div>
+		<%= form.submit "Salvar" %>
+	</div>
+	
+<% end %>
