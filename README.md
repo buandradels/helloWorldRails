@@ -1,24 +1,8 @@
-# README
+# Desafio proposto - Hello World Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para concluir o Desafio proposto segui os guias oficiais do Ruby on Rails, li sobre a linguagem na API do Ruby, pesquisei sobre dúvidas semelhante às minhas no Stack Overflow, e também troquei conhecimento em comunidades de Ruby no Telegram.
 
-Things you may want to cover:
+Foi utilizada a versão 6.1.4.1 do Ruby on Rails.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Para alimentar previamente o site de Gerenciamento de Máquinas, foram utilizadas informações de máquinas de café da Nespresso como modelo. 
+* As informações foram retiradas do site https://www.nespresso.com/br/pt/order/machines/vertuo
